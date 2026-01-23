@@ -1,6 +1,6 @@
 # Kaggle로 ML과 LLM 활용 능력 기르기 (0)
 
-<img width="903" height="641" alt="image" src="https://github.com/user-attachments/assets/e4430128-5d74-4e0e-b92a-d2af9d81a7e5" />
+<img width="903" height="641" alt="image" src="https://storage.googleapis.com/kaggle-media/random/landing_page_post.gif" />
 
 Kaggle을 활용해 머신러닝/LLM 문제 해결 전 과정을 경험하고, 그 과정에서 얻은 모델 선택 기준과 활용 한계를 정리하여 연구소 내에 공유하고자 함.
 
