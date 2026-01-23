@@ -1,4 +1,4 @@
-# Kaggle로 ML과 LLM 활용 능력 기르기 (1)
+# Kaggle로 ML과 LLM 활용 능력 기르기 (0)
 
 <img width="903" height="641" alt="image" src="https://github.com/user-attachments/assets/e4430128-5d74-4e0e-b92a-d2af9d81a7e5" />
 
