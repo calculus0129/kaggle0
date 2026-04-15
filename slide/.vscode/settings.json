@@ -1,0 +1,75 @@
+{
+    // ---------- LaTeX Workshop ----------
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": true,
+
+    // Default recipe — LuaLaTeX for Korean (kotex) support
+    "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
+
+    // Recipes (build sequences)
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (lualatex)",
+            "tools": ["latexmk-lualatex"]
+        },
+        {
+            "name": "latexmk (pdflatex)",
+            "tools": ["latexmk-pdflatex"]
+        },
+        {
+            "name": "pdflatex x2",
+            "tools": ["pdflatex", "pdflatex"]
+        }
+    ],
+
+    // Tools called by recipes
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-lualatex",
+            "command": "latexmk",
+            "args": [
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "latexmk-pdflatex",
+            "command": "latexmk",
+            "args": [
+                "-pdf",
+                "-pdflatex=pdflatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        }
+    ],
+
+    // Clean auxiliary files after a successful build
+    "latex-workshop.latex.autoClean.run": "onSucceeded",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot",
+        "*.out", "*.toc", "*.acn", "*.acr", "*.alg", "*.glg", "*.glo",
+        "*.gls", "*.fls", "*.log", "*.snm", "*.nav",
+        "*.vrb", "*.synctex.gz"
+    ],
+
+    // SyncTeX: jump between PDF and source
+    "latex-workshop.synctex.afterBuild.enabled": true,
+
+    // Show PDF in VS Code tab (change to "external" to use system viewer)
+    "latex-workshop.view.pdf.viewer": "tab",
+
+    // Suppress the "build succeeded" notification
+    "latex-workshop.message.information.show": false
+}
